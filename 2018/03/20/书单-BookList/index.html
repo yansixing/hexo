@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.0.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.0.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.0.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.0.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.0.4" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '6.0.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
+  <meta name="keywords" content="生活," />
+
+
+<meta name="description" content="建一份书单，这几年读的书不是很多，大多是专业书，持续更新…格式为：[入手时间] + [书名] + [作者]点击书名会进入这本书的豆瓣页面 较早期的书本日期统一注为2015.01 专业向计算机 2017.11 JavaScript设计模式 [美] Addy Osmani 2016.04 JavaScript DOM编程艺术 [英] Jeremy Keith  2015.01 JavaScript高级">
+<meta name="keywords" content="生活">
+<meta property="og:type" content="article">
+<meta property="og:title" content="书单 &#x2F; BookList">
+<meta property="og:url" content="http://floatingmuseum.net/home/wwwroot/public/2018/03/20/书单-BookList/index.html">
+<meta property="og:site_name" content="Floating Museum">
+<meta property="og:description" content="建一份书单，这几年读的书不是很多，大多是专业书，持续更新…格式为：[入手时间] + [书名] + [作者]点击书名会进入这本书的豆瓣页面 较早期的书本日期统一注为2015.01 专业向计算机 2017.11 JavaScript设计模式 [美] Addy Osmani 2016.04 JavaScript DOM编程艺术 [英] Jeremy Keith  2015.01 JavaScript高级">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-03-24T06:33:46.524Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="书单 &#x2F; BookList">
+<meta name="twitter:description" content="建一份书单，这几年读的书不是很多，大多是专业书，持续更新…格式为：[入手时间] + [书名] + [作者]点击书名会进入这本书的豆瓣页面 较早期的书本日期统一注为2015.01 专业向计算机 2017.11 JavaScript设计模式 [美] Addy Osmani 2016.04 JavaScript DOM编程艺术 [英] Jeremy Keith  2015.01 JavaScript高级">
+
+
+
+
+
+
+  <link rel="canonical" href="http://floatingmuseum.net/home/wwwroot/public/2018/03/20/书单-BookList/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+  <title>书单 / BookList | Floating Museum</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Floating Museum</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">These violent delights have violent ends.</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-user"></i> <br />About</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />Tags</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives</a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+    <div class="reading-progress-bar"></div>
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://floatingmuseum.net/home/wwwroot/public/2018/03/20/书单-BookList/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="yansixing">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Floating Museum">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">书单 / BookList</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-20T17:41:16+08:00">2018-03-20</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>建一份书单，这几年读的书不是很多，大多是专业书，持续更新…<br>格式为：[入手时间] + [书名] + [作者]<br>点击书名会进入这本书的豆瓣页面</p>
+<p><em>较早期的书本日期统一注为2015.01</em></p>
+<h1 id="专业向"><a href="#专业向" class="headerlink" title="专业向"></a>专业向</h1><h2 id="计算机"><a href="#计算机" class="headerlink" title="计算机"></a>计算机</h2><ul>
+<li><a href="https://book.douban.com/subject/24744217/" target="_blank" rel="noopener">2017.11 JavaScript设计模式 [美] Addy Osmani</a></li>
+<li><a href="https://book.douban.com/subject/1921890/" target="_blank" rel="noopener">2016.04 JavaScript DOM编程艺术 [英] Jeremy Keith </a></li>
+<li><a href="https://book.douban.com/subject/10546125/" target="_blank" rel="noopener">2015.01 JavaScript高级程序设计  [美] 尼古拉斯·泽卡斯</a><a id="more"></a></li>
+<li><a href="https://book.douban.com/subject/5416995/" target="_blank" rel="noopener">2016.04 Javascript从入门到精通 高宏</a></li>
+<li><a href="https://book.douban.com/subject/25733582/" target="_blank" rel="noopener">2016.04 jQuery基础教程 [美] Jonathan Chaffer / [美] Karl Swedberg </a></li>
+<li><a href="https://book.douban.com/subject/25768396/" target="_blank" rel="noopener">2016.04 深入浅出Node.js 朴灵 </a></li>
+<li><a href="https://book.douban.com/subject/3549421/" target="_blank" rel="noopener">2015.01 PHP和MySQL Web开发 [美]Luke Welling / Laura Thomson</a></li>
+<li><a href="https://book.douban.com/subject/4866934/" target="_blank" rel="noopener">2015.01 Python基础教程 [美]Magnus Lie Hetland </a></li>
+<li><a href="https://book.douban.com/subject/26598045/" target="_blank" rel="noopener">2016.04 Web全栈工程师的自我修养 余果</a></li>
+<li><a href="https://book.douban.com/subject/6424904/" target="_blank" rel="noopener">2015.01 大话数据结构 程杰 </a></li>
+<li><a href="https://book.douban.com/subject/3227098/" target="_blank" rel="noopener">2015.01 编程珠玑 [美] Jon Bentley </a></li>
+<li><a href="https://book.douban.com/subject/10546125/" target="_blank" rel="noopener">2015.01 深入理解计算机系统 [美]Randal E.Bryant / David O’Hallaron </a></li>
+<li><a href="https://book.douban.com/subject/3117332/" target="_blank" rel="noopener">2015.01 微型计算机原理与接口技术 周荷琴/吴秀清 </a></li>
+<li><a href="https://book.douban.com/subject/24703171/" target="_blank" rel="noopener">2017.11 机器学习实战 [美]Peter Harrington</a></li>
+<li><a href="https://book.douban.com/subject/6510686/" target="_blank" rel="noopener">2017.11 Google时代的工作方法 </a></li>
+<li><a href="https://book.douban.com/subject/20451827/" target="_blank" rel="noopener">2017.11 Web前端黑客技术揭秘 钟晨鸣 / 徐少培 </a></li>
+</ul>
+<h1 id="非专业向"><a href="#非专业向" class="headerlink" title="非专业向"></a>非专业向</h1><h2 id="社科文学向"><a href="#社科文学向" class="headerlink" title="社科文学向"></a>社科文学向</h2><ul>
+<li><a href="https://book.douban.com/subject/1012611/" target="_blank" rel="noopener">2017.01 乌合之众：大众心理研究 [法] Gustave Le Bon</a></li>
+<li><a href="https://book.douban.com/subject/25985021/" target="_blank" rel="noopener">2015.01 人类简史 [以色列] 尤瓦尔·赫拉利 </a></li>
+<li><a href="https://book.douban.com/subject/26943161/" target="_blank" rel="noopener">2015.01 未来简史 [以色列] 尤瓦尔·赫拉利 </a></li>
+<li><a href="https://book.douban.com/subject/1047205/" target="_blank" rel="noopener">2015.01 性学三论・爱情心理学 [奥地利] 西格蒙德·弗洛伊德 </a></li>
+<li><a href="https://book.douban.com/subject/6797700/" target="_blank" rel="noopener">2015.01 自我与本我 [奥地利] 西格蒙德·弗洛伊德 </a></li>
+</ul>
+<h2 id="艺术向"><a href="#艺术向" class="headerlink" title="艺术向"></a>艺术向</h2><ul>
+<li><a href="https://book.douban.com/subject/3323633/" target="_blank" rel="noopener">2015.05 写给大家看的设计书（第3版） [美] Robin Williams</a></li>
+<li><a href="https://book.douban.com/subject/26426195/" target="_blank" rel="noopener">2015.01 懂你的人 会懂你的好  慕容引刀</a></li>
+<li><a href="https://book.douban.com/subject/3440557/" target="_blank" rel="noopener">2015.01 亲爱的沙皮  慕容引刀</a></li>
+<li><a href="https://book.douban.com/subject/2251434/" target="_blank" rel="noopener">2015.01 被爱路过  慕容引刀</a></li>
+</ul>
+<h2 id="诗"><a href="#诗" class="headerlink" title="诗"></a>诗</h2><ul>
+<li><a href="https://book.douban.com/subject/22163516/" target="_blank" rel="noopener">2017.03 云雀叫了一整天 木心</a></li>
+</ul>
+<h2 id="影集"><a href="#影集" class="headerlink" title="影集"></a>影集</h2><ul>
+<li><a href="https://book.douban.com/subject/20424613/" target="_blank" rel="noopener">2015.03 南法航线 Pano</a></li>
+</ul>
+<h2 id="散文杂文"><a href="#散文杂文" class="headerlink" title="散文杂文"></a>散文杂文</h2><ul>
+<li><a href="https://book.douban.com/subject/1054685/" target="_blank" rel="noopener">2017.04 沉默的大多数 王小波</a></li>
+<li><a href="https://book.douban.com/subject/6021440/" target="_blank" rel="noopener">2017.01 黑客与画家 [美] Paul Graham</a></li>
+<li><a href="https://book.douban.com/subject/25718753/" target="_blank" rel="noopener">2015.01 一个人的村庄 刘亮程 </a></li>
+</ul>
+<h2 id="小说"><a href="#小说" class="headerlink" title="小说"></a>小说</h2><ul>
+<li><a href="https://book.douban.com/subject/27123582/" target="_blank" rel="noopener">2018.01 刀锋 [英] 毛姆</a></li>
+<li><a href="https://book.douban.com/subject/10601521/" target="_blank" rel="noopener">2016.09 太阳与铁 [日] 三岛由纪夫 </a></li>
+<li><a href="https://book.douban.com/subject/3391248/" target="_blank" rel="noopener">2016.09 金阁寺 [日] 三岛由纪夫 </a></li>
+<li><a href="https://book.douban.com/subject/5366440/" target="_blank" rel="noopener">2016.09 禁色 [日] 三岛由纪夫 </a></li>
+<li><a href="https://book.douban.com/subject/3391245/" target="_blank" rel="noopener">2016.09 假面的自白 [日] 三岛由纪夫 </a></li>
+<li><a href="https://book.douban.com/subject/3391246/" target="_blank" rel="noopener">2016.09 潮骚 [日] 三岛由纪夫 </a></li>
+<li><a href="https://book.douban.com/subject/4123116/" target="_blank" rel="noopener">2016.01 月亮和六便士 [英] 毛姆</a></li>
+<li><a href="https://book.douban.com/subject/1065250/" target="_blank" rel="noopener">2015.01 呼兰河传 萧红 </a></li>
+<li><a href="https://book.douban.com/subject/5406563/" target="_blank" rel="noopener">2015.01 一九八四 [英] 乔治·奥威尔 </a></li>
+<li><a href="https://book.douban.com/subject/2035179/" target="_blank" rel="noopener">2015.01 动物农场 [英] 乔治·奥威尔 </a></li>
+<li><a href="https://book.douban.com/subject/24736901/" target="_blank" rel="noopener">2015.01 山音 [日] 川端康成 </a></li>
+<li><a href="https://book.douban.com/subject/24736899/" target="_blank" rel="noopener">2015.01 雪国 [日] 川端康成 </a></li>
+<li><a href="https://book.douban.com/subject/1000856/" target="_blank" rel="noopener">2015.01 我是猫 [日] 夏目漱石 </a></li>
+<li><a href="https://book.douban.com/subject/1692648/" target="_blank" rel="noopener">2015.01 一个人的村庄 刘亮程 </a></li>
+<li><a href="https://book.douban.com/subject/26264594/" target="_blank" rel="noopener">2015.01 魔兽世界·阿尔萨斯 [美] 克里斯蒂·高登 </a></li>
+<li><a href="https://book.douban.com/subject/25868123/" target="_blank" rel="noopener">2015.01 魔兽世界·战争罪行 [美] 克里斯蒂·高登 </a></li>
+<li><a href="https://book.douban.com/subject/24358147/" target="_blank" rel="noopener">2015.01 魔兽世界·战争之潮 [美] 克里斯蒂·高登 </a></li>
+<li><a href="https://book.douban.com/subject/26421116/" target="_blank" rel="noopener">2015.01 魔兽世界·巨龙的黎明 [美] 理查德·A·纳克 </a></li>
+<li><a href="https://book.douban.com/subject/25839365/" target="_blank" rel="noopener">2015.01 魔兽世界·巨龙的黄昏 [美] 克里斯蒂·高登 </a></li>
+<li><a href="https://book.douban.com/subject/1883353/" target="_blank" rel="noopener">2015.01 魔兽世界·野性的呼唤 [美] 杰克·伦敦 </a></li>
+</ul>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/生活/" rel="tag"># 生活</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/03/25/体验自我与叙事自我/" rel="prev" title="体验自我与叙事自我">
+                体验自我与叙事自我 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpeg"
+                alt="yansixing" />
+            
+              <p class="site-author-name" itemprop="name">yansixing</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/yansixing" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:yansixing123@gmail.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://stackoverflow.com/yourname" target="_blank" title="StackOverflow"><i class="fa fa-fw fa-stack-overflow"></i>StackOverflow</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://www.instagram.com/yansixing/" target="_blank" title="Instagram"><i class="fa fa-fw fa-instagram"></i>Instagram</a>
+                  
+                </span>
+              
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#专业向"><span class="nav-number">1.</span> <span class="nav-text">专业向</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#计算机"><span class="nav-number">1.1.</span> <span class="nav-text">计算机</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#非专业向"><span class="nav-number">2.</span> <span class="nav-text">非专业向</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#社科文学向"><span class="nav-number">2.1.</span> <span class="nav-text">社科文学向</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#艺术向"><span class="nav-number">2.2.</span> <span class="nav-text">艺术向</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#诗"><span class="nav-number">2.3.</span> <span class="nav-text">诗</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#影集"><span class="nav-number">2.4.</span> <span class="nav-text">影集</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#散文杂文"><span class="nav-number">2.5.</span> <span class="nav-text">散文杂文</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小说"><span class="nav-number">2.6.</span> <span class="nav-text">小说</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">yansixing</span>
+
+  
+
+  
+</div>
+
+
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Gemini</a> v6.0.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/reading_progress/reading_progress.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.0.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.0.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.4"></script>
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
